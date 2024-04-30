@@ -1,3 +1,0 @@
-project study
-dgfdsgfsdg
-dsg
