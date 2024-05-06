@@ -456,7 +456,383 @@
 // getMathResult(10, 5);
 
 
-const logg = 'Hello world';
-console.log(logg.slice (6, 11));
-console.log(logg.slice (6));
-console.log(logg.slice(-5))
+// const logg = 'Hello world';
+// console.log(logg.slice (6, 11));
+// console.log(logg.slice (6));
+// console.log(logg.slice(-5))
+
+
+
+
+// function calculateVolumeAndArea(a) {
+//     const kub = a * a * a;
+//     const plos = a * a * 6
+//     if (typeof a !== 'nuber' || a !== '' || a !== undefined){
+//         console.log(`Объем куба: ${kub}, площадь всей поверхности: ${plos}`)
+//     }else{
+//         console.log('При вычислении произошла ошибка')
+//     } 
+// }
+// calculateVolumeAndArea(5)
+
+// function first(){
+//     setTimeout(function (){
+//         console.log(1);
+//     },500);
+// }
+
+// function second () {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS (lang, callback) {
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+//     function done(){
+//         console.log('Я прошел урок!');
+//     }
+
+
+// learnJS('JavaScript', done)
+
+
+// const options = {
+//     name : 'test',
+//     width : 1024,
+//     higth : 1024,
+//     colors : {
+//         border : 'black',
+//         bg: 'red'
+//     }
+// };
+
+
+// // console.log(options.colors.bg);
+// // console.log(options['colors']['bg']);
+
+// // delete options.name
+// // delete options[name]
+
+// // console.log(options)
+
+// // for (let key in options) {
+// //     console.log(` Свойства ${key} имеет значение ${options[key]}`);
+// // }
+
+// let counter = 0;
+// for (let key in options) {
+//     if (typeof (options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(` Свойства ${i} имеет значение ${options[key][i]}`);
+//             counter++;
+//         }
+        
+//     }else {
+//         console.log(` Свойства ${key} имеет значение ${options[key]}`);
+        
+//     }
+// }
+//  console.log(counter);
+
+
+
+
+// const options = {
+//     name : 'test',
+//     width : 1024,
+//     higth : 1024,
+//     colors : {
+//         border : 'black',
+//         bg: 'red'
+//     }
+// };
+
+// console.log(Object.keys(options));
+// console.log(Object.keys(options).length);
+
+
+
+
+// const siski = {
+//     name : 'raznie',
+//     forma : 3 ,
+//     razmer : 4 ,
+//     color : {
+//         bg : 'ziza' ,
+//         oreola : 'pink',
+//         sosok : 'kvadrat'
+//     },
+//     makeTest : function () {
+//         console.log('Test')
+//     }
+ 
+// }
+
+// siski.makeTest() 
+// console.log(Object.keys(siski));
+// console.log(Object.keys(siski).length);
+// const {bg, oreola, sosok} = siski.color
+// console.log(oreola)
+
+
+
+
+
+// const arr = [1, 2, 3, 6, 8];
+
+// arr.pop();
+// console.log(arr);
+
+// arr.push(9);
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i])
+// }
+
+
+// const arr = [2, 3, 6, 8, 10];
+
+// for (let pipa of arr) {
+//     console.log(pipa);
+// }
+
+
+// const arr = 'privet gandon';
+
+// arr.forEach(function (item, i, arr) {
+//     console.log(`${i + 1} : ${item} внутри строки ${arr}`);
+// });
+
+// const arr = [2, 3, 6, 8, 10];
+
+// arr.forEach(function (item, i, arr) {
+//     console.log(`${i + 1}. ${item} внутри массива ${arr}`)
+// })
+
+// const str = prompt ('', '');
+// const products = str.split (', ');
+// console.log(products.join('; '));
+
+
+// const arr = [2, 13, 26, 8, 10]
+// arr.sort(comapeNum);
+// console.log(arr);
+
+// function comapeNum (a, b) {
+//     return a - b;
+// }
+
+
+
+
+// let a = 5,
+//     b = a;
+
+// b = b + 5;
+
+// console.log(b);
+// console.log(a);
+
+// const obj = {
+//     a : 5,
+//     b : 1 
+// }
+// const copy = obj;
+// copy.b = 2;
+
+// console.log(copy);
+// console.log(obj);
+
+
+
+// function copy(mainObj) {
+//     let objCopy = {}
+
+//     for (let key in mainObj) {
+//         objCopy[key] = mainObj[key]
+//     }
+//     return objCopy;
+// }
+
+// const numbers = {
+//     a : 2,
+//     b : 3,
+//     c : {
+//         x : 7,
+//         y : 8
+//     }
+// }
+
+// const newNumbers =copy(numbers)
+// newNumbers.b = 5
+
+// console.log(numbers);
+// console.log(newNumbers);
+
+// const add = {
+//     d : 15,
+//     e : 20
+// }
+
+// console.log (Object.assign(numbers, add))
+
+// const clonee = Object.assign({}, add);
+// clonee.e = 100;
+// console.log(add);
+// console.log(clonee);
+
+// const oldArray = [ 'a', 'b', 'c']
+// const newArray = oldArray.slice();
+// newArray[1]= 'afafsadfwaf'
+// console.log(oldArray);
+// console.log(newArray)
+
+
+// const video = [ 'youtube', 'vimeo', 'rutube'],
+//     blogs = ['worldpress', 'livejournal', 'blogger'],
+//     internet = ['vk', ...video, ...blogs, 'fb']
+
+// console.log(internet)
+
+
+// function log (a, b, c) {
+//     console.log(a);
+//     console.log (b);
+//     console.log (c);
+// }
+
+// const num = [ 2, 5, 7]
+
+// log(...num)
+
+
+// const ar = ['a', 'b'];
+// const newAr = [...ar]
+// newAr[1] = 'c';
+// console.log(ar);
+// console.log(newAr)
+
+
+// const q = {
+//     one : 1,
+//     two : 2
+// }
+
+// const newQ = {...q};
+// newQ.two = 5;
+
+// console.log(q);
+// console.log(newQ);
+
+
+
+
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'
+//         },
+//         exp: '1 month'
+//     }
+// };
+
+// const {exp} = personalPlanPeter.skills
+// console.log(exp)
+
+// function showExperience(plan) {
+//     const {exp} = plan.skills;
+//     return exp;
+// }
+
+// showExperience(personalPlanPeter);
+
+
+// function showProgrammingLangs(plan) {
+//     let str = '';                                   // ЗАЧЕМ И ПОЧЕМУ????
+//     const {programmingLangs} = plan.skills;
+//     for (let key in programmingLangs) {
+//         str +=`Язык ${key} изучен на ${programmingLangs[key]}\n`
+//     }
+//   return str;   
+// }
+
+// showProgrammingLangs(personalPlanPeter)
+
+
+
+// function showFamily(arr) {
+//     let str = ''
+//     if (arr.length === 0) {
+//         console.log('Семья пуста')
+// }else {
+//     console.log ('Семья состоит из: ')
+// }
+// arr.forEach(function (item) {
+//     str += `${item}`
+// })
+//   return str;
+// }  
+
+// showFamily(family)
+
+
+// let str = 'some';
+// let newObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(newObj))
+
+// console.dir([1, 2, 3])
+
+
+const shoppingMallData = {
+    shops: [
+        {
+            width: 10,
+            length: 5
+        },
+        {
+            width: 15,
+            length: 7
+        },
+        {
+            width: 20,
+            length: 5
+        },
+        {
+            width: 8,
+            length: 10
+        }
+    ],
+    height: 5,
+    moneyPer1m3: 30,
+    budget: 50000
+}
+
+function isBudgetEnough(huec) {
+  let plos = 0
+  let obem = 0
+   
+  huec.shops.forEach(magaz =>{
+    plos += magaz.width * magaz.width
+    });
+
+    obem = plos *huec.height
+
+    if (huec.budget - (obem * huec.moneyPer1m3) >= 0) {
+        return 'Бюджета достаточно';
+    } else {
+        return 'Бюджета недостаточно';
+    }
+}
+
+isBudgetEnough(shoppingMallData);
